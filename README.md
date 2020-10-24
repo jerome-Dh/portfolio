@@ -7,8 +7,10 @@
 </p>
 
 ## About
-<p>This project is the website presenting my portfolio.
-Building and presenting in two languages: ``Francais`` and ``English``.</p>
+This project is the website presenting my portfolio.
+Building and presenting in two languages: 
+``Francais`` and ``English``.
+
 
 ## Build with
 <ul>
@@ -18,3 +20,5 @@ Building and presenting in two languages: ``Francais`` and ``English``.</p>
     <li>JQuery</li>
 </ul>
 
+## Author
+[Jerome Dh](https://github.com/jerome-Dh/) 

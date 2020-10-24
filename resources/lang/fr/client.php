@@ -7,14 +7,14 @@ return [
      */
 
     // About
-    'welcome_portofio' => 'Bienvenue dans mon Portfolio',
+    'welcome_portfolio' => 'Bienvenue dans mon Portfolio',
 
     // Experiencies
     'experiencies' => 'Experiences',
     'experiencyTitle' => 'Experiences et travaux relatifs',
-    'experiencyDesc' => "Six annees d'experiences dans divers travaux",
+    'experiencyDesc' => "Six années d'experiences dans divers travaux",
     'experiencyAuthor' => "Jerome Dh",
-    'experiency_motivation' => "Des longues annees d'experiences obtenues dans les technologies web et mobile",
+    'experiency_motivation' => "Des longues années d'experiences obtenues dans les technologies web et mobile",
 
     // Skills and works
     'skills' => 'Competences',
@@ -31,7 +31,7 @@ return [
     // Others
     'others' => 'Autres',
     'othersTitle' => 'Documentations et livres',
-    'othersDesc' => 'Quelques documentations et livres exploitess',
+    'othersDesc' => 'Quelques documentations et livres exploites',
     'othersAuthor' => 'Jerome Dh',
     'othersRelated' => 'Liens utiles',
     'books_read' => 'Documentations et livres',
@@ -49,14 +49,14 @@ return [
     'socials' => 'Liens sociaux',
     'up' => 'Vers le haut',
     'english' => 'English',
-    'francais' => 'Francais',
+    'francais' => 'Français',
     'change_language' => 'Choisir la langue',
-    'change_lang_text' => 'Selectionner une langue de navigation',
+    'change_lang_text' => 'Sélectionner une langue de navigation',
     'about' => 'A propos',
     'ok' => 'ok',
     'view' => 'Voir',
     'description' => 'Description',
-    'techno_used' => 'Technologies utilisees',
+    'techno_used' => 'Technologies utilisées',
     'medias' => 'Medias',
     'source' => 'Source',
     'today' => "Aujourd'hui",
