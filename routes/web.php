@@ -38,7 +38,7 @@ Route::get('/', function () {
 
 Route::get('/{lang}',               [ClientController::class, 'about']);
 Route::get('/{lang}/skills',        [ClientController::class, 'skills']);
-Route::get('/{lang}/experiencies',  [ClientController::class, 'experiencies']);
+Route::get('/{lang}/experiences',   [ClientController::class, 'experiences']);
 Route::get('/{lang}/others',        [ClientController::class, 'others']);
 Route::get('/{lang}/blog',          [ClientController::class, 'blog']);
 
