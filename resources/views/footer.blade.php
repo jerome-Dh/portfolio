@@ -1,7 +1,7 @@
 @php
     $about_url = url('/'.(app()->getLocale()));
     $skills_url = url('/'.(app()->getLocale()).'/skills');
-    $experiencies_url = url('/'.(app()->getLocale()).'/experiencies');
+    $experiences_url = url('/'.(app()->getLocale()).'/experiences');
     $others_url = url('/'.(app()->getLocale()).'/others');
     $blog_url = url('/'.(app()->getLocale()).'/blog');
 @endphp
@@ -32,11 +32,11 @@
                 <li>
                     <span class="uk-icon uk-icon-image uk-margin-small-right"
                           style="background-image: url({{ asset('storage/0055-price-tags-2.png') }});"></span>
-                    <a href="{!! $experiencies_url !!}">{{ __('client.experiencies') }}</a>
+                    <a href="{!! $experiences_url !!}">{{ __('client.experiences') }}</a>
                 </li><li>
                     <span class="uk-icon uk-icon-image uk-margin-small-right"
                           style="background-image: url({{ asset('storage/0076-map-1.png') }});"></span>
-                    <a href="{!! $experiencies_url !!}#works">{{ __('client.works') }}</a>
+                    <a href="{!! $experiences_url !!}#works">{{ __('client.works') }}</a>
                 </li><li>
                     <span class="uk-icon uk-icon-image uk-margin-small-right"
                           style="background-image: url({{ asset('storage/0163-mug-1.png') }});"></span>
@@ -51,7 +51,7 @@
             </ul>
         </div><div class="uk-margin-auto@m">
 
-            <h5 class="uk-text-muted uk-margin-remove-bottom">{{ __('client.usefull_link') }}</h5>
+            <h5 class="uk-text-muted uk-margin-remove-bottom">{{ __('client.useful_link') }}</h5>
 
             <ul class="uk-list uk-margin-small-top">
 
@@ -92,13 +92,13 @@
             <li>
                 <span class="uk-icon uk-icon-image uk-margin-small-right"
                       style="background-image: url({{ asset('storage/United_Kingdom.png') }});"></span>
-                <a title="Engish" href="{{ url('/settings/en?url='.request()->fullUrl()) }}">English</a>
+                <a title="English" href="{{ url('/settings/en?url='.request()->fullUrl()) }}">English</a>
             </li>
 
             <li>
                 <span class="uk-icon uk-icon-image uk-margin-small-right"
                       style="background-image: url({{ asset('storage/France.png') }});"></span>
-                <a title="Francais" href="{{ url('/settings/fr?url='.request()->fullUrl()) }}">Francais</a>
+                <a title="Français" href="{{ url('/settings/fr?url='.request()->fullUrl()) }}">Francais</a>
             </li>
 
         </ul>
