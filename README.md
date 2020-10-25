@@ -1,8 +1,8 @@
 # Portfolio
 <p align="center">
+<img src="https://raw.githubusercontent.com/jerome-Dh/portfolio/master/storage/app/public/logo3.png" width="100" alt="Logo"/>
 <img src="https://raw.githubusercontent.com/jerome-Dh/portfolio/master/storage/app/public/logo1.png" width="100" alt="Logo"/>
 <img src="https://raw.githubusercontent.com/jerome-Dh/portfolio/master/storage/app/public/logo2.png" width="100" alt="Logo"/>
-<img src="https://raw.githubusercontent.com/jerome-Dh/portfolio/master/storage/app/public/logo3.png" width="100" alt="Logo"/>
 <img src="https://raw.githubusercontent.com/jerome-Dh/portfolio/master/storage/app/public/logo4.png" width="100" alt="Logo"/>
 </p>
 
