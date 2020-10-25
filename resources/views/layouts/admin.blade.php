@@ -2,7 +2,7 @@
 
 @extends('layouts.app')
 
-@section('title', __('Personnal space !'))
+@section('title', __('Personal space !'))
 
 @section('header')
     @include('auth.head')
