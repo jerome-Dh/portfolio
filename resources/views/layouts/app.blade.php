@@ -26,8 +26,6 @@
         <link rel="preload" href="{!! asset('fonts/BLACK.ttf') !!}" as="font" type="font/truetype" crossorigin>
         <link rel="preload" href="{!! asset('fonts/Vegan.ttf') !!}" as="font" type="font/truetype" crossorigin>
 
-        <meta name="author" content="{{ __("Jerome Dh") }}">
-        <meta name="description" content="{{ __("client.og_description") }}">
         <link rel="author" href="mailto:{{ env('MY_EMAIL1') }}" />
         <link rel="author" type="text/html" href="{{ url('/') }}" />
 	@show
