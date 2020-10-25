@@ -66,7 +66,7 @@ return [
 
     'about_p1' => "<strong>Hi, I'm Jerome Dh and this site presents my Portfolio.</strong><br>
             This gives references on my <a href=':skills_url'>skills</a>, <a href=':works_url'>related works</a>
-            and as well as my <a href=':experiencies_url'>experiences</a>.",
+            and as well as my <a href=':experiences_url'>experiences</a>.",
     'about_p6' => "Otherwise, certain information such as my academic background or my diplomas and certifications
             can be found on my <a href='".env('MY_LINKEDIN')."' target='_blank' class='uk-link'>Linkedin</a>
             profile and related work on <a href='".env('MY_GITHUB')."' target='_blank' class='uk-link'>Github</a>",
@@ -88,7 +88,7 @@ return [
     'about_h3_1' => "About me",
     'about_h3_2' => "Motivations",
     'about_h3_3' => "What we find in this portfolio ?",
-    'about_ul_1' => "<li><a href=':experiencies_url'>Experiences</a>, obtained through several projects</li>
+    'about_ul_1' => "<li><a href=':experiences_url'>Experiences</a>, obtained through several projects</li>
             <li><a href=':works_url'>Related works</a>, such as academic and open-source projects</li>
             <li><a href=':skills_url'>Skills</a> acquired through experience, own research or during my academic career</li>
             <li>Also, <a href=':books_url'>several documentations and sources</a> that I use regularly during my works</li>
