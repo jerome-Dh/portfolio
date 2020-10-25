@@ -16,11 +16,10 @@
     "You have x years old" : "Vous n'avez pas d'age :name|{1} vous avez un an :name|[2,*] Vous avez :age ans :name",
     "Your language is :lang": "Votre langue est :lang",
 
-    "Personnal space !" : "Espace personnel !",
+    "Personal space !" : "Espace personnel !",
     "Menu" : "Menu",
     "Admin" : "Admin",
-    "Active" : "En activite",
+    "Active" : "En activité",
     "Jerome Dh" : "Jerome Dh",
-    "Change the language" : "Changer la langue",
     "Main menu" : "Menu principal"
 }
