@@ -13,15 +13,15 @@ return [
     'experiences' => 'Expériences',
     'experienceTitle' => 'Expériences et travaux relatifs',
     'experienceDesc' => "Six années d’expériences dans le développement d'applications",
-    'experienceAuthor' => "Jérôme Dh",
+    'experienceAuthor' => "Jerome Dh",
     'experience_motivation' => "Six années d’expériences dans les technologies web et mobile",
 
     // Skills and works
     'skills' => 'Compétences',
     'skillTitle' => 'Mes compétences',
     'skillDesc' => 'Mes compétences',
-    'skillAuthor' => "Jérôme Dh",
-    'skills_motivation' => 'Les technologies et outils associes sont mes motivations depuis six années',
+    'skillAuthor' => "Jerome Dh",
+    'skills_motivation' => 'Les technologies et outils associés sont mes motivations depuis six années',
 
     // Works
     'works' => 'Travaux',
@@ -32,7 +32,7 @@ return [
     'others' => 'Autres',
     'othersTitle' => 'Documentations et livres',
     'othersDesc' => 'Quelques documentations et livres exploités',
-    'othersAuthor' => 'Jérôme Dh',
+    'othersAuthor' => 'Jerome Dh',
     'othersRelated' => 'Liens utiles',
     'books_read' => 'Documentations et livres',
     'others_related' => "Plus d'informations & liens utiles",
@@ -40,7 +40,7 @@ return [
     // Blog
     'blog' => 'Blog',
     'blogDesc' => 'Partages des astuces et connaissances autour des technologies',
-    'blogAuthor' => 'Jérôme Dh',
+    'blogAuthor' => 'Jerome Dh',
     'blogH1' => 'Blog',
 
     'useful_link' => 'Liens utiles',
@@ -64,9 +64,9 @@ return [
     'more' => 'Plus',
     'see_more' => 'Voir plus',
 
-    'about_p1' => "<strong>Salut, je suis Jérôme Dh et ce site présente mon Portfolio.</strong><br>
+    'about_p1' => "<strong>Salut, je suis Jerome Dh et ce site présente mon Portfolio.</strong><br>
             Celui-ci donne des références sur mes <a href=':skills_url'>compétences</a>, des <a href=':works_url'>travaux relatifs</a> et aussi bien
-            que mes <a href=':experiencies_url'>expériences</a>.",
+            que mes <a href=':experiences_url'>expériences</a>.",
 
     'about_p6' => "Autrement, certaines informations telle que mon parcours académique ou mes diplômes et certifications peuvent être trouvées
             sur mon profil <a href='".env('MY_LINKEDIN')."' target='_blank' class='uk-link'>Linkedin</a> et
@@ -92,13 +92,13 @@ return [
     'about_h3_2' => "Motivations",
     'about_h3_3' => "Quels contenus ?",
 
-    'about_ul_1' => "<li><a href=':experiencies_url'>Des expériences</a> obtenues au travers de plusieurs projets</li>
+    'about_ul_1' => "<li><a href=':experiences_url'>Des expériences</a> obtenues au travers de plusieurs projets</li>
             <li><a href=':works_url'>Des travaux relatifs</a>, tels que les projets académiques et open-sources</li>
             <li><a href=':skills_url'>Des compétences</a> acquises au long des expériences, des propres recherches ou durant mon parcours académique</li>
             <li>Aussi, <a href=':books_url'>plusieurs documentations et sources</a> que j'exploite régulièrement durant mes travaux</li>
             <li>Par manque de temps, il m'est actuellement difficile d'entretenir un <a href=':blog_url'>blog</a>, mais cela est pour bientôt !</li>",
 
-    'og_description' => 'Portfolio de Jérôme Dh. Développeur PHP, Java, JavaScript et Frameworks associés',
+    'og_description' => 'Portfolio de Jerome Dh. Développeur PHP, Java, JavaScript et Frameworks associés',
     'head_title' => "Développeur PHP, Java, JavaScript",
     'average' => 'Moyenne',
 
