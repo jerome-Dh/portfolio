@@ -43,6 +43,7 @@ return [
     'blogAuthor' => 'Jerome Dh',
     'blogH1' => 'Blog',
 
+    'app_dev' => "Application developer",
     'useful_link' => 'Useful links',
     'language' => 'Language',
     'navigation' => 'Navigation',

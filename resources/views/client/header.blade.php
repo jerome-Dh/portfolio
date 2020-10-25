@@ -23,6 +23,23 @@
                         <img src="{!! asset('storage/me_2_2019.jpg') !!}" width="80" height="80" alt="logo" class="uk-border-circle"/>
                     </a><br>
                     <span class="uk-text-small">{{ __('Jerome Dh') }}, Nov 2020</span>
+                    <script type="application/ld+json">
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "Person",
+                      "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Yaounde",
+                        "addressRegion": "CM",
+                        "streetAddress": "Kondengui Rue 4072"
+                      },
+                      "email": "{{ env('MY_EMAIL1') }}",
+                      "image": "{!! asset('storage/me_2_2019.jpg') !!}",
+                      "jobTitle": "{{ __('client.app_dev') }}",
+                      "name": "{{ __('Jerome Dh') }},
+                      "url": "{{ url('/') }}"
+                    }
+                    </script>
                 </div>
 
                 <div class="uk-margin-small-top uk-margin-large-left uk-visible@m">

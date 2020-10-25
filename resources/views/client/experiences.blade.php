@@ -141,6 +141,23 @@
                                             </div>
                                         </div>
 
+                                        <script type="application/ld+json">
+                                        {
+                                          "@context": "https://schema.org/",
+                                          "@type": "JobPosting",
+                                          "title": "Software Developer",
+                                          "skills": {
+                                            "@type": "DefinedTerm",
+                                            "termCode": "K0016",
+                                            "description": "{{ ucfirst(show($exp->description_en, $exp->description_fr)) }}",
+                                            "inDefinedTermSet": {
+                                              "@type": "DefinedTermSet",
+                                              "name": "{{ ucfirst(show($exp->name_en, $exp->name_fr)) }}",
+                                              "url": "{{ request()->fullUrl() }}",
+                                            }
+                                          }
+                                        }
+                                        </script>
 
                                     </li>
 
