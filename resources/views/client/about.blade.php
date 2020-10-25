@@ -1,7 +1,7 @@
 @php
     $about_url = url('/'.(app()->getLocale()));
     $skills_url = url('/'.(app()->getLocale()).'/skills');
-    $experiencies_url = url('/'.(app()->getLocale()).'/experiencies');
+    $experiences_url = url('/'.(app()->getLocale()).'/experiencies');
     $others_url = url('/'.(app()->getLocale()).'/others');
     $blog_url = url('/'.(app()->getLocale()).'/blog');
 @endphp
@@ -23,7 +23,7 @@
         <h3 class="pancard-title">{!! __('client.about_h3_1') !!}</h3>
         <p>
             <img src="{{ asset('storage/logo4.png') }}" class="uk-border-circle uk-float-left uk-margin-small uk-margin-small-right" width="90">
-            <p class='uk-text-lead uk-dropcap'>{!! __('client.about_p1', ['skills_url' => $skills_url, 'works_url' => $experiencies_url.'#works', 'experiencies_url' => $experiencies_url]) !!}</p>
+            <p class='uk-text-lead uk-dropcap'>{!! __('client.about_p1', ['skills_url' => $skills_url, 'works_url' => $experiences_url.'#works', 'experiencies_url' => $experiences_url]) !!}</p>
         </p>
 
         <p>{!! __('client.about_p6') !!}</p>
@@ -41,8 +41,8 @@
         <ul>
             {!! __('client.about_ul_1', [
                     'skills_url' => $skills_url,
-                    'experiencies_url' => $experiencies_url,
-                    'works_url' => $experiencies_url.'#works',
+                    'experiences_url' => $experiences_url,
+                    'works_url' => $experiences_url.'#works',
                     'books_url' => $others_url.'#books',
                     'blog_url' => $blog_url,
                   ]) !!}
