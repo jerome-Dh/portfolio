@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', __('client.experiencyTitle'))
+@section('title', __('client.experienceTitle'))
 
 @section('metas')
     @parent
-    <meta name="author" content="{{ __('client.experiencyAuthor') }}">
-    <meta name="description" content="{{ __('client.experiencyDesc') }}">
+    <meta name="author" content="{{ __('client.experienceAuthor') }}">
+    <meta name="description" content="{{ __('client.experienceDesc') }}">
 @endsection
 
 @section('content')
@@ -18,7 +18,7 @@
 
                 <div class="uk-width-auto@s">
                     <h1 class="uk-margin-small-bottom">
-                        {{ __('client.experiencies') }}</h1>
+                        {{ __('client.experiences') }}</h1>
 
                     <span class="uk-text-muted">
                         <img src="{{ asset('storage/0189-tree.png') }}" class="uk-border-circle" width="26"  alt="tree">
@@ -26,14 +26,14 @@
                 </div>
 
                 <div class="uk-width-expand@s uk-margin-small-top">
-                    {{ __('client.experiency_motivation') }}
+                    {{ __('client.experience_motivation') }}
                 </div>
             </div>
         </div>
 
         <div>
 
-            @foreach($experiencies as $year => $experience)
+            @foreach($experiences as $year => $experience)
 
                 <div class="uk-grid uk-section-muted line-deco">
 
