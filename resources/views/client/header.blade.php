@@ -2,7 +2,7 @@
 @php
     $about_url = url('/'.(app()->getLocale()));
     $skills_url = url('/'.(app()->getLocale()).'/skills');
-    $experiencies_url = url('/'.(app()->getLocale()).'/experiencies');
+    $experiences_url = url('/'.(app()->getLocale()).'/experiences');
     $others_url = url('/'.(app()->getLocale()).'/others');
     $blog_url = url('/'.(app()->getLocale()).'/blog');
 @endphp
@@ -53,10 +53,10 @@
                             </li>
 
                             <li class="uk-margin-small-left">
-                                <a href="{!! $experiencies_url !!}">
+                                <a href="{!! $experiences_url !!}">
                                     @component('components.menu-item', [
-                                        'name' => __('client.experiencies'),
-                                        'active' => is_active_link('experiencies')
+                                        'name' => __('client.experiences'),
+                                        'active' => is_active_link('experiences')
                                     ])
                                     @endcomponent
                                 </a>
@@ -170,9 +170,9 @@
                     <a href="{!! $about_url !!}">
                         <span uk-icon="icon: code; ratio: .9"></span> {{ __('client.about') }}</a>
                 </li>
-                <li class="{!! is_active_link('experiencies') ? 'uk-active' : '' !!}">
-                    <a href="{!! $experiencies_url !!}">
-                        <span uk-icon="icon: star; ratio: .9"></span> {{ __('client.experiencies') }}</a>
+                <li class="{!! is_active_link('experiences') ? 'uk-active' : '' !!}">
+                    <a href="{!! $experiences_url !!}">
+                        <span uk-icon="icon: star; ratio: .9"></span> {{ __('client.experiences') }}</a>
                 </li>
                 <li class="{!! is_active_link('skills') ? 'uk-active' : '' !!}">
                     <a href="{!! $skills_url !!}">
