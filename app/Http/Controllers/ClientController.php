@@ -32,13 +32,13 @@ class ClientController extends Controller
      * @param WorkRepository $workRepository
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function experiencies($lang, ExperienceRepository $experienceRepository, WorkRepository $workRepository)
+    public function experiences($lang, ExperienceRepository $experienceRepository, WorkRepository $workRepository)
     {
         app()->setLocale($lang);
-        $experiencies = $experienceRepository->getByYear();
+        $experiences = $experienceRepository->getByYear();
         $works = $workRepository->getAllWorks();
 
-        return view('client.experiencies', compact('experiencies', 'works'));
+        return view('client.experiences', compact('experiences', 'works'));
     }
 
     /**
