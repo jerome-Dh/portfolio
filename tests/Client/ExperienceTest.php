@@ -16,8 +16,8 @@ class ExperienceTest extends TestCase
      */
     public function testExperiencies()
     {
-        $response = $this->get('/en/experiencies');
+        $response = $this->get('/en/experiences');
         $response->assertStatus(200);
-        $response->assertViewIs('client.experiencies');
+        $response->assertViewIs('client.experiences');
     }
 }
