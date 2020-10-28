@@ -14,9 +14,10 @@ class CreateExperiencesTable extends Migration
     public function up()
     {
         Schema::create('experiences', function (Blueprint $table) {
+
             $table->id();
 
-            $table->tinyInteger('year');
+            $table->integer('year');
             $table->string('name_en', 100)->unique();
             $table->string('name_fr', 100)->unique();
             $table->string('description_en', 255)->nullable(true);
