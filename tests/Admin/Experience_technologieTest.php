@@ -2,6 +2,7 @@
 
 namespace Tests\Admin;
 
+use Illuminate\Support\Facades\DB;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -35,10 +36,12 @@ class Experience_technologieTest extends TestCase
     {
         parent::setUp();
 
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 		Experience_technologie::truncate();
 		User::truncate();
         Experience::truncate();
         Technologie::truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 
     /**

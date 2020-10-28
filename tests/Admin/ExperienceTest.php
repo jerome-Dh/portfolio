@@ -2,6 +2,7 @@
 
 namespace Tests\Admin;
 
+use Illuminate\Support\Facades\DB;
 use Tests\TestCase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
@@ -37,8 +38,10 @@ class ExperienceTest extends TestCase
     {
         parent::setUp();
 
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 		Experience::truncate();
 		User::truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 
     /**
@@ -114,7 +117,7 @@ class ExperienceTest extends TestCase
 
 	/**
      * Test store
-	 *
+	 * @group tt
      * @return void
      * @throws \Exception
      */
@@ -125,6 +128,7 @@ class ExperienceTest extends TestCase
 		// Wrong datas : year absent
 		$d = $this->getExperience();
 		$d['year'] = null;
+        $d['image'] = null;
         $response = $this->actingAs($user, 'web')
             ->post($this->base_url.'/experiences', $d);
         $response->assertStatus(302);
@@ -137,6 +141,7 @@ class ExperienceTest extends TestCase
 
 		$d = $this->getExperience();
 		$d['name_en'] = $exists->name_en;
+        $d['image'] = null;
         $response = $this->actingAs($user, 'web')
             ->post($this->base_url.'/experiences', $d);
 		$response->assertRedirect($this->base_url.'/experiences/create');
@@ -224,6 +229,7 @@ class ExperienceTest extends TestCase
 
 		// Wrong datas : Inexistant Id
 		$d = $this->getExperience();
+        $d['image'] = null;
         $response = $this->actingAs($user, 'web')
             ->put($this->base_url.'/experiences/'.(99999), $d);
         $response->assertStatus(302);
@@ -235,6 +241,7 @@ class ExperienceTest extends TestCase
 
 		$d = $this->getExperience();
 		$d['year'] = null;
+        $d['image'] = null;
         $response = $this->actingAs($user, 'web')
             ->put($this->base_url.'/experiences/'.$experience->id, $d);
         $response->assertStatus(302);
@@ -247,6 +254,7 @@ class ExperienceTest extends TestCase
 
 		$d = $this->getExperience();
 		$d['name_en'] = $exists->name_en;
+        $d['image'] = null;
 		$experience = Experience::create($this->getExperience());
 
         $response = $this->actingAs($user, 'web')

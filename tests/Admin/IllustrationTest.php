@@ -2,6 +2,7 @@
 
 namespace Tests\Admin;
 
+use Illuminate\Support\Facades\DB;
 use Tests\TestCase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
@@ -37,9 +38,11 @@ class IllustrationTest extends TestCase
     {
         parent::setUp();
 
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 		Illustration::truncate();
 		User::truncate();
         Experience::truncate();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 
     /**
