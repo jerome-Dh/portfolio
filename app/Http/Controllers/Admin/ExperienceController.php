@@ -149,7 +149,7 @@ class ExperienceController extends Controller
         }
         else
         {
-            //Echec de validation
+            // Validation fails
             return redirect(url($this->base_path.'experiences/'.$uri))
                 ->withErrors($validator)
                 ->withInput();
