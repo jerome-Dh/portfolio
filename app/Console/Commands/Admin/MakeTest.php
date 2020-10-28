@@ -193,6 +193,7 @@ namespace Tests\Admin;
 use Tests\TestCase;'
 .$this->getImportUploadedImage($datas).'
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\\{'.$upperName.', User'.$relationnalModelsNames.'};
 
@@ -224,8 +225,10 @@ class '.$upperName.'Test extends TestCase
     {
         parent::setUp();
 
+        DB::statement(\'SET FOREIGN_KEY_CHECKS=0;\');
 		'.$upperName.'::truncate();
 		User::truncate();'.$this->getRelationalTruncate($datas).'
+		DB::statement(\'SET FOREIGN_KEY_CHECKS=1;\');
     }
 
     /**
