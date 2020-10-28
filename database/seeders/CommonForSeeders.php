@@ -54,7 +54,7 @@ trait CommonForSeeders
     protected function getExperience()
     {
          return [
-			'year' => random_int(2014, 2020),
+			'year' => ''.(random_int(2014, 2020)),
 			'name_en' => \Str::random(random_int(10, 15)),
 			'name_fr' => \Str::random(random_int(10, 15)),
 			'description_en' => \Str::random(random_int(10, 15)).' '.\Str::random(random_int(10, 15)).' '.\Str::random(random_int(10, 15)),
@@ -114,12 +114,15 @@ trait CommonForSeeders
      */
     protected function getModule_skill()
     {
-        $skills_count = Skill::count();
-
          return [
 			'module_id' => Module::create($this->getModule())->id,
-			'skill_id' => random_int(1, $skills_count),
-		];
+			'skill_id' => Skill::create([
+                    'name_en' => \Str::random(15),
+                    'name_fr' => \Str::random(15),
+                    'subname_en' => \Str::random(15),
+                    'subname_fr' => \Str::random(15),
+                ])->id,
+            ];
     }
 
     /**
