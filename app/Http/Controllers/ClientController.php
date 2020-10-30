@@ -66,7 +66,17 @@ class ClientController extends Controller
     {
         app()->setLocale($lang);
 
-        $books = Storage::files('books');
+        $books = scandir('books');
+
+        // Filter
+        $books = array_filter($books, function ($item){
+            return $item !== '.' and $item !== '..';
+        });
+
+        // Prepend path
+        $books = array_map(function ($item){
+            return 'books/'.$item;
+        }, $books);
 
         return view('client.others', compact('books'));
     }
