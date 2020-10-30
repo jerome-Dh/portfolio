@@ -78,7 +78,7 @@ if( ! function_exists('is_active_link')) {
         if($uri == '/')
         {
             $locale = app()->getLocale();
-            return $active_uri == '/'.$locale or $active_uri == '/' or $active_uri == '/'.$locale.'/';
+            return $active_uri == '/public/'.$locale or $active_uri == '/public/' or $active_uri == '/public/'.$locale.'/';
         }
         else
         {
