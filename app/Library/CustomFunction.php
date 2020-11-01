@@ -118,17 +118,32 @@ trait CustomFunction
         // Log::error($image);
 
         if ($image->isValid()) {
+
             //Generate an unique id
             $ret = $image->store($this->dir_images);
+			$ret = basename($ret);
 
-			// Substract the "public/" preffix
-			$ret = substr($ret, strlen($this->dir_images.'/'));
+			// Only for 000webhostapp.com server that doesn't support symlink
+            $this->moveToPublicDir($ret);
+
         }
         else {
             $ret = false;
         }
 
         return $ret;
+    }
+
+    /**
+     * Hit: Move from storage/app/public/ to public/storage/
+     * @param $filename
+     */
+    public function moveToPublicDir($filename)
+    {
+        if(file_exists(base_path('/storage/app/public/'.$filename)))
+        {
+            rename (base_path('storage/app/public/'.$filename), base_path('public/storage/'.$filename));
+        }
     }
 
 	/**
