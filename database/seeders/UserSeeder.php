@@ -27,10 +27,10 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        for($i = 0; $i < 20; $i++) {
-            $user = $this->getUser();
-            User::create($user);
-        }
+//        for($i = 0; $i < 20; $i++) {
+//            $user = $this->getUser();
+//            User::create($user);
+//        }
 
         User::create([
             'name' => 'Jerome Dh',
