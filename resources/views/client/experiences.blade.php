@@ -74,7 +74,7 @@
                                                     <div>
                                                         @if($exp->technologies)
                                                             @foreach($exp->technologies as $tecno)
-                                                                <img src="{{ asset('storage/'.$tecno->image) }}" title="{{ show($tecno->name_en, $tecno->name_fr) }}" class="uk-border-circle" width="32"  alt="Technology illustration">
+                                                                <img src="{{ asset('storage/'.$tecno->image) }}" title="{{ show($tecno->name_en, $tecno->name_fr) }}" width="32"  alt="Technology illustration"> &nbsp;
                                                             @endforeach
                                                         @endif
                                                     </div>
@@ -107,19 +107,19 @@
                                                     <div>
                                                         @if($exp->technologies)
                                                             @foreach($exp->technologies as $tecno)
-                                                                <img src="{{ asset('storage/'.$tecno->image) }}" title="{{ show($tecno->name_en, $tecno->name_fr) }}" width="80"  alt="Technology illustration">
+                                                                <img src="{{ asset('storage/'.$tecno->image) }}" title="{{ show($tecno->name_en, $tecno->name_fr) }}" width="80"  alt="Technology illustration"> &nbsp;
                                                             @endforeach
                                                         @endif
                                                     </div>
 
                                                     <h4>{{ __('client.medias') }}</h4>
                                                     @if($exp->illustrations)
-                                                        <div class="uk-child-width-1-3 uk-child-width-1-4@m" uk-grid uk-lightbox="animation: slide">
+                                                        <div class="uk-child-width-1-2 uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
 
                                                             @foreach($exp->illustrations as $illus)
                                                             <div>
                                                                 <a class="uk-inline" href="{{ asset('storage/'.$illus->image) }}" data-caption="Illustration {!! $loop->iteration !!}">
-                                                                    <img src="{{ asset('storage/'.$illus->image) }}" title="" width="120"  alt="Media illustration">
+                                                                    <img src="{{ asset('storage/'.$illus->image) }}" title="" width="150"  alt="Media illustration">
                                                                 </a>
                                                             </div>
                                                             @endforeach
