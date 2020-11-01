@@ -113,8 +113,6 @@
 
                                     </li>
 
-
-
                                     @endforeach
 
                                 @endif
