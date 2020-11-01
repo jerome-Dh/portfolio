@@ -19,7 +19,7 @@
                    autocomplete="{{ $name }}"
                    placeholder="{{ $placeholder }}"
                    minlength="3"
-                   maxlength="100"
+                   maxlength="555"
                    {!! $optional ? '' : 'required' !!}
 
                    @isset($datalist)
