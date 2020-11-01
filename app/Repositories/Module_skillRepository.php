@@ -59,7 +59,7 @@ class Module_skillRepository extends ResourceRepository
         if($q)
         {
             $clone = $clone->where(function ($query) use ($q) {
-                
+
 
             });
         }
@@ -71,7 +71,7 @@ class Module_skillRepository extends ResourceRepository
                     ->paginate($nb, ['*'], 'page', $current);
 
     }
-    
+
     /**
      * Get list modules for select
      *
@@ -79,7 +79,7 @@ class Module_skillRepository extends ResourceRepository
      */
 	public function getModuleForSelect() {
 	    $modules = [];
-	    foreach (Module::orderBy('id', 'DESC')->get() as $module) {
+	    foreach (Module::orderBy('name_en', 'ASC')->get() as $module) {
 	        $modules[$module->id] = ucfirst($module->name_en);
         }
 
@@ -92,7 +92,7 @@ class Module_skillRepository extends ResourceRepository
      */
 	public function getSkillForSelect() {
 	    $skills = [];
-	    foreach (Skill::orderBy('id', 'DESC')->get() as $skill) {
+	    foreach (Skill::orderBy('name_en', 'ASC')->get() as $skill) {
 	        $skills[$skill->id] = ucfirst($skill->name_en);
         }
 

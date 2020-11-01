@@ -92,7 +92,7 @@ class Experience_technologieRepository extends ResourceRepository
      */
 	public function getTechnologieForSelect() {
 	    $technologies = [];
-	    foreach (Technologie::orderBy('id', 'DESC')->get() as $technologie) {
+	    foreach (Technologie::orderBy('name_en', 'ASC')->get() as $technologie) {
 	        $technologies[$technologie->id] = ucfirst($technologie->name_en);
         }
 
