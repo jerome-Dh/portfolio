@@ -12,9 +12,9 @@ return [
     // Experiences
     'experiences' => 'Experiences',
     'experienceTitle' => 'My experiences and related works',
-    'experienceDesc' => 'Six years of experience in application development',
+    'experienceDesc' => 'Seven years of experience in application development',
     'experienceAuthor' => "Jerome Dh",
-    'experience_motivation' => 'Six years of experience applied in web and mobile technologies',
+    'experience_motivation' => 'Seven years of experience applied in web and mobile technologies',
 
     // Skills and works
     'skills' => 'Skills',
@@ -75,7 +75,8 @@ return [
     'about_p2' => "I typically work on <strong>web and mobile technologies</strong> for business service offers.
             These services focus on management, finance, billing, etc ... but during my own research and hobby,
             I also work on desktop oriented applications such as the
-            <a href='".env('MY_GITHUB')."/etoile-bleue-server' target='_blank' class='uk-link'>web server</a> project.
+            <a href='".env('MY_GITHUB')."/etoile-bleue-server' target='_blank' class='uk-link'>web server</a> project or
+            the <a href='https://jerome-dh.github.io/break-all/' target='_blank' class='uk-link'>Break-All</a> game.
             For many of them, I implement or reuse algorithms in the target language.",
 
     'about_p3' => "So I mostly work on client-server apps, mobile apps, databases, and APIs.

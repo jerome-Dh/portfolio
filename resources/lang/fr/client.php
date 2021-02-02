@@ -12,9 +12,9 @@ return [
     // Experiences
     'experiences' => 'Expériences',
     'experienceTitle' => 'Expériences et travaux relatifs',
-    'experienceDesc' => "Six années d’expériences dans le développement d'applications",
+    'experienceDesc' => "Sept années d’expériences dans le développement d'applications",
     'experienceAuthor' => "Jerome Dh",
-    'experience_motivation' => "Six années d’expériences dans les technologies web et mobile",
+    'experience_motivation' => "Sept années d’expériences dans les technologies web et mobile",
 
     // Skills and works
     'skills' => 'Compétences',
@@ -76,7 +76,8 @@ return [
     'about_p2' => "Je travaille typiquement sur les <strong>technologies web et mobiles</strong> pour les offres de services aux entreprises.
             Ces services sont axées sur la gestion, les finances, la facturation, etc..
             mais durant mes propres recherches et passe-temps, je travaille aussi sur des applications orientées desktop tel que le projet
-            <a href='".env('MY_GITHUB')."/etoile-bleue-server' target='_blank' class='uk-link'>web server</a>.
+            <a href='".env('MY_GITHUB')."/etoile-bleue-server' target='_blank' class='uk-link'>web server</a> ou le jeu
+            <a href='https://jerome-dh.github.io/break-all/' target='_blank' class='uk-link'>Break-All</a>.
             Pour beaucoup d'entre eux, j’implémente ou réutilise des algorithmes dans le langage cible.",
 
     'about_p3' => "Donc, je travaille le plus souvent sur des applications client-serveur, les applications mobiles, les bases de données et les API.
